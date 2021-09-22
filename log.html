@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/index-CSS.CSS">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <style>
+            .bo{
+                height:50%;
+                width: 100%;
+                padding-top: 50px; 
+                padding-left: 300px; 
+                padding-right: 300px; 
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+
+            }
+            body{
+              background-color: #d5e7e9;
+            }
+            #l{
+                width: 400px;
+            }
+            .cen{
+                /* align-items: center;
+                text-align: center; */
+                margin: auto;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/    navbar     /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/     -->
+
+    <nav>
+      <div id="navbar" class="logo">
+          <img src="img/LOGO/logo-icon.png" alt="logo">
+          <div class="logotex">Technoventtia</div>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="html/events.html">Events</a></li>
+          <li><a href="html/testimonials.html">Testimonials</a></li>
+          <li><a href="html/about-us.html">About</a></li>
+      </ul>
+  </nav>
+
+<br><br><br><br><br>
+
+  
+       <div class="container">
+        <div class="row">
+          <div class="col">
+    <form action="index.html" class="row g-3 needs-validation" novalidate>
+       
+
+        <div class="col-md-6">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom05" class="form-label">Password</label>
+            <input type="password" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a Password.
+            </div>
+          </div>
+    
+   
+      
+      
+       <div class="col-12">
+           <br>
+          <button   class="btn btn-primary" type="submit" id="l" >Log In</button>
+         
+        
+      </form>
+      </div>
+      </div>
+      </div>
+  
+      <script>
+
+
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+// Data Picker Initialization
+$('.datepicker').datepicker();
+      </script>
+   
+
+
+</body>
+
+</html>
